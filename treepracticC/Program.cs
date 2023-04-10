@@ -51,3 +51,30 @@
 //     {
 //     Console.WriteLine("четное");
 //     }
+
+// **восьмая задача**
+
+Console.WriteLine("введте число:");
+string text = Console.ReadLine();
+int a = Convert.ToInt32(text);
+int index = 2;
+if(a > 0)    
+    {
+    while (index <= a)
+    {
+    Console.WriteLine(index);
+    index = index + 2;
+    }
+    }
+else 
+    {
+    index = -2;
+    
+
+    while (index >= a)
+    {
+    Console.WriteLine(index);
+    index = index - 2;
+
+    }
+    }
