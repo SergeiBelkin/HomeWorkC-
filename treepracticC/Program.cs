@@ -75,8 +75,8 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("введите целое число");
-int i = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите целое число");
+// int i = Convert.ToInt32(Console.ReadLine());
 
-for (int Q = 1; Q <= i; Console.WriteLine(Math.Pow(Q,  3)), Q++ );
+// for (int Q = 1; Q <= i; Console.WriteLine(Math.Pow(Q,  3)), Q++ );
 
