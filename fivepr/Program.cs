@@ -2,7 +2,26 @@
 // числами из промежутка [-9, 9]. Найдите суммы отрицательных 
 // и положительных элементов массива.
 
+// int[] array = new int[10];
+// int sumPozitive = 0;
+// int sumNegative = 0;
+// for (int i = 0; i < array.Length; i++)
+// {
+//     int randomNum = new Random().Next(-9,9);
+//     array[i] = randomNum;
+//     if (array[i] < 0)
+//     {
+//         sumNegative = sumNegative+array[i];
+//     }
+//     if (array[i] > 0)
+//     {
+//         sumPozitive = sumPozitive+array[i];
+//     }
+// }
 
+
+// Console.WriteLine("сумма отрицательных чисел в массиве:"+sumNegative);
+// Console.WriteLine("сумма положительных чисел в массиве:"+sumPozitive);
 
 
 
@@ -13,7 +32,22 @@
 // положительные элементы замените на соответствующие отрицательные,
 //  и наоборот.
 
+// int[] array = new int[10];
 
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     int randomNum = new Random().Next(-9,9);
+//     array[i] = randomNum;
+//     // Console.Write(array[i]+" до ");
+//     if (array[i] < 0 || array[i] > 0)
+//     {
+//         array[i] = array[i]*(-1);
+//         // Console.Write(array[i]+" после ");
+//         Console.WriteLine();
+//     }
+    
+// }
 
 
 /*
