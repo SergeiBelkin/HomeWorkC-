@@ -55,29 +55,29 @@ m = 3, n = 4.
 
 8,0 7,8 -7,1 9,0
 */
-Console.WriteLine("enter column:");
-int m = int.Parse(Console.ReadLine());
-Console.WriteLine("enter string:");
-int n = int.Parse(Console.ReadLine());
+// Console.WriteLine("enter column:");
+// int m = int.Parse(Console.ReadLine());
+// Console.WriteLine("enter string:");
+// int n = int.Parse(Console.ReadLine());
 
-double [,] matrix = new double[n,m];
+// double [,] matrix = new double[n,m];
 
-double [,] MatrixFilled(int str, int col) //метод заполнения массива случайными числами от -10,0 до 10,0 и распечатка в терминале
-{
-    for (int i = 0; i < str  ; i++)
-    {
-        Console.WriteLine();
-        for (int j = 0; j < col ; j++)
-        {
-           matrix[i,j] = Math.Round (new Random().Next(-10, 10)+ new Random().NextDouble(),1);
-           Console.Write(matrix[i,j] +"___"); 
-        }
-    }
-    return matrix;
-}
+// void MatrixFilled(int str, int col) //метод заполнения массива случайными числами от -10,0 до 10,0 
+// {
+//     for (int i = 0; i < str  ; i++)
+//     {
+//         
+//         for (int j = 0; j < col ; j++)
+//         {
+//            matrix[i,j] = Math.Round (new Random().Next(-10, 10)+ new Random().NextDouble(),1);
+//             
+//         }
+//     }
+    
+// }
 
 
-MatrixFilled(n,m);
+// MatrixFilled(n,m);
 
 
 
@@ -105,9 +105,9 @@ MatrixFilled(n,m);
 // int MatrixRows = 3;
 // int MatrixColumn = 4;
 // int[,]Matrix = new int [MatrixRows, MatrixColumn];
-
+// int a = 0;
 // Console.WriteLine();
-// void FindIndexMatrix(int Entered)
+// void FindIndexMatrix(int Entered) //поиск числа в массиве
 // {
 //     for (int i = 0; i < MatrixRows; i++)
 //     {
@@ -116,14 +116,16 @@ MatrixFilled(n,m);
             
 //             if (Matrix[i,j] == Entered)
 //             {
-//                 Console.WriteLine(i+","+j);
+//                 Console.WriteLine();
+//                 Console.WriteLine( j+","+i);
+//                 a ++;
 //             }
 
 //         }
 //     }
-
+    
 // }
-// int [,] MatrixFilled(int Rows, int Column) //метод заполнения массива случайными числами 
+// int [,] MatrixFilled(int Rows, int Column) //метод заполнения массива случайными числами и распечатка в терминале
 // {
 //     for (int i = 0; i < Rows  ; i++)
 //     {
@@ -131,7 +133,7 @@ MatrixFilled(n,m);
 //         for (int j = 0; j < Column ; j++)
 //         {
 //            Matrix[i,j] = new Random().Next(-10, 10);
-//            Console.Write(Matrix[i,j] +"___");
+//            Console.Write(Matrix[i,j] +"  ");
             
 //         }
 //     }
@@ -139,6 +141,8 @@ MatrixFilled(n,m);
 // }
 // MatrixFilled(MatrixRows, MatrixColumn);
 // FindIndexMatrix(EnteredText);
+// Console.WriteLine();
+// if (a==0)Console.WriteLine("нет искомого числа в массиве");
 
 
 /*
