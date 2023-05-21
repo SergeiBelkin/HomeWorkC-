@@ -8,10 +8,10 @@
 
 
 
-    Console.WriteLine("enter number :");
-    double EnteredText = int.Parse(Console.ReadLine());
-    string EndedText = "end";
-    Console.WriteLine(EnteredText+100);
+    // Console.WriteLine("enter number :");
+    // double EnteredText = int.Parse(Console.ReadLine());
+    // string EndedText = "end";
+    // Console.WriteLine(EnteredText+100);
 
 
 
