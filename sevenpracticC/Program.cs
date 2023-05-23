@@ -154,45 +154,45 @@ m = 3, n = 4.
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 */
-Console.WriteLine("Введите количество строк массива:");
-int r = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов массива:");
-int c = int.Parse(Console.ReadLine());
-int [,] Matrix = new int [r, c];
-double summ = 0;
-void MatrixFilled(int rows, int column) //метод заполнения массива случайными числами и распечатка в терминале
-{
-    for (int i = 0; i < rows; i++)
-    {
-        Console.WriteLine();
-        for (int j = 0; j < column ; j++)
-        {
-           Matrix[i,j] = new Random().Next(1, 10);
-           Console.Write(Matrix[i,j] +"  ");
+// Console.WriteLine("Введите количество строк массива:");
+// int r = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов массива:");
+// int c = int.Parse(Console.ReadLine());
+// int [,] Matrix = new int [r, c];
+// double summ = 0;
+// void MatrixFilled(int rows, int column) //метод заполнения массива случайными числами и распечатка в терминале
+// {
+//     for (int i = 0; i < rows; i++)
+//     {
+//         Console.WriteLine();
+//         for (int j = 0; j < column ; j++)
+//         {
+//            Matrix[i,j] = new Random().Next(1, 10);
+//            Console.Write(Matrix[i,j] +"  ");
             
-        }
-    }
+//         }
+//     }
     
-}
-MatrixFilled(r,c);
-Console.WriteLine();
-double SummRows (int col) // метод подсчета среднеарифметической суммы элементов столбца двумерного массива
-{
+// }
+// MatrixFilled(r,c);
+// Console.WriteLine();
+// double SummRows (int col) // метод подсчета среднеарифметической суммы элементов столбца двумерного массива
+// {
     
-    for (int i = 0, s = Matrix[i,col]; i < r - 1; i++)
-    {
-        s += Matrix[i+1,col];
-        summ = s;
-    }
-    return summ = summ/r;   
+//     for (int i = 0, s = Matrix[i,col]; i < r - 1; i++)
+//     {
+//         s += Matrix[i+1,col];
+//         summ = s;
+//     }
+//     return summ = summ/r;   
     
-}
+// }
 
-for (int x = 0; x < c; x++)
-{
-    SummRows(x);
-    Console.WriteLine("среднеарифм сумма столбца"+x+" = "+summ);
-}
+// for (int x = 0; x < c; x++)
+// {
+//     SummRows(x);
+//     Console.WriteLine("среднеарифм сумма столбца"+x+" = "+summ);
+// }
 
 
 
